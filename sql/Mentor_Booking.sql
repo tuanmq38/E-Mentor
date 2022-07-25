@@ -5,7 +5,7 @@ USE Mentor_Booking;
 -- Create table User
 create table User (
     id INT AUTO_INCREMENT PRIMARY KEY,
-	full_name VARCHAR(50),	
+	full_name VARCHAR(100),	
 	username VARCHAR(20),
     email VARCHAR(100),
 	password VARCHAR(250)
@@ -17,7 +17,7 @@ VALUES ('admin', 'admindemo', 'admin@ad.ca', '$apr1$r0g82q3p$A5cuVu2FzlBfkl9.auI
 -- Create table Metor
 create table Mentor (
     mentor_id TINYINT(3) AUTO_INCREMENT PRIMARY KEY,
-    mentor_email VARCHAR(100), NOT NULL
+    mentor_email VARCHAR(100) NOT NULL,
     mentor_fist_name VARCHAR(50) NOT NULL,
     mentor_last_name VARCHAR(50) NOT NULL,
     mentor_phone_no VARCHAR(30) NOT NULL,
@@ -29,8 +29,8 @@ create table Mentor (
     mentor_schedule_time time NOT NULL -- format 00:00:00
 ) Engine=InnoDB;
 
-INSERT INTO Mentor (mentor_email, mentor_fist_name, mentor_last_name, mentor_phone_no, mentor_dob, mentor_gender, mentor_degree, mentor_expert_field, mentor_schedule_date, mentor_schedule_time)
-VALUES ('johnd@mentor.ca', 'John', 'Doe', '12364435678', '1971-08-22', 'Male', 'MBA', 'Training', "2022-10-12", "9:00:00");
+INSERT INTO Mentor (mentor_id, mentor_email, mentor_fist_name, mentor_last_name, mentor_phone_no, mentor_dob, mentor_gender, mentor_degree, mentor_expert_field, mentor_schedule_date, mentor_schedule_time)
+VALUES (1, 'johnd@mentor.ca', 'John', 'Doe', '12364435678', '1971-08-22', 'Male', 'MBA', 'Training', "2022-10-12", "9:00:00");
 
 
 -- Create table Mentee
@@ -46,7 +46,7 @@ create table Mentee (
 ) Engine=InnoDB;
 
 INSERT INTO Mentee (mentee_id, mentee_email, mentee_fist_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
-VALUES ('anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734')
+VALUES (1, 'anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734');
 
 
 -- Create table Schedule
@@ -61,12 +61,11 @@ VALUES ('anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734
 -- Crete table Appointment
 create table Appointment (
     appointment_id TINYINT(3) AUTO_INCREMENT PRIMARY KEY,
-    mentor_id TINYINT(3),
-    mentee_id TINYINT(3),
-    mentor_schedule_date date,
-    mentor_schedule_time time
-    FOREIGN KEY (mentor_id) REFERENCES Mentor (mentor_id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (mentee_id) REFERENCES Mentee (mentee_id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (mentor_schedule_date) REFERENCES Mentor (mentor_schedule_date) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (mentor_schedule_time) REFERENCES Mentor (mentor_schedule_time) ON DELETE CASCADE ON UPDATE CASCADE
+    mentor TINYINT(3),
+    mentee TINYINT(3),
+    FOREIGN KEY (mentor) REFERENCES Mentor (mentor_id),
+    FOREIGN KEY (mentee) REFERENCES Mentee (mentee_id)
 ) Engine=InnoDB;
+
+INSERT INTO Appointment (mentor, mentee)
+VALUES (1, 1);
