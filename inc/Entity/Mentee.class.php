@@ -2,6 +2,8 @@
 
 class Mentee {
     private $mentee_id;
+    private $mentee_email;
+    private $password;
     private $mentee_first_name;
     private $mentee_last_name;
     private $mentee_dob;
@@ -9,6 +11,11 @@ class Mentee {
     private $mentee_phone_no;
     private $mentee_status;
     
+    //Verify the password
+    function verifyPassword(string $passwordToVerify) {
+        //Return a boolean based on verifying if the password given is correct for the current user
+        return password_verify($passwordToVerify, $this->password);
+    }
 
     /**
      * Get the value of mentee_id
@@ -146,6 +153,26 @@ class Mentee {
     public function setMentee_status($mentee_status)
     {
         $this->mentee_status = $mentee_status;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of mentee_email
+     */ 
+    public function getMentee_email()
+    {
+        return $this->mentee_email;
+    }
+
+    /**
+     * Set the value of mentee_email
+     *
+     * @return  self
+     */ 
+    public function setMentee_email($mentee_email)
+    {
+        $this->mentee_email = $mentee_email;
 
         return $this;
     }

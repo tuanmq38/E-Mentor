@@ -4,13 +4,13 @@
         private $mentor_email;
         private $mentor_first_name;
         private $mentor_last_name;
-        private $mentor_phone_no;
-        private $mentor_dob;
         private $mentor_gender;
         private $mentor_degree;
         private $mentor_expert_field;
         private $mentor_schedule_date;
-        private $mentor_schedule_time;
+        private $mentor_start_time;
+        private $mentor_end_time;
+
 
         /**
          * Get the value of mentor_id
@@ -88,46 +88,6 @@
         public function setMentor_last_name($mentor_last_name)
         {
                 $this->mentor_last_name = $mentor_last_name;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of mentor_phone_no
-         */ 
-        public function getMentor_phone_no()
-        {
-                return $this->mentor_phone_no;
-        }
-
-        /**
-         * Set the value of mentor_phone_no
-         *
-         * @return  self
-         */ 
-        public function setMentor_phone_no($mentor_phone_no)
-        {
-                $this->mentor_phone_no = $mentor_phone_no;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of mentor_dob
-         */ 
-        public function getMentor_dob()
-        {
-                return $this->mentor_dob;
-        }
-
-        /**
-         * Set the value of mentor_dob
-         *
-         * @return  self
-         */ 
-        public function setMentor_dob($mentor_dob)
-        {
-                $this->mentor_dob = $mentor_dob;
 
                 return $this;
         }
@@ -213,21 +173,41 @@
         }
 
         /**
-         * Get the value of mentor_schedule_time
+         * Get the value of mentor_start_time
          */ 
-        public function getMentor_schedule_time()
+        public function getMentor_start_time()
         {
-                return $this->mentor_schedule_time;
+                return $this->mentor_start_time;
         }
 
         /**
-         * Set the value of mentor_schedule_time
+         * Set the value of mentor_start_time
          *
          * @return  self
          */ 
-        public function setMentor_schedule_time($mentor_schedule_time)
+        public function setMentor_start_time($mentor_start_time)
         {
-                $this->mentor_schedule_time = $mentor_schedule_time;
+                $this->mentor_start_time = $mentor_start_time;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of mentor_end_time
+         */ 
+        public function getMentor_end_time()
+        {
+                return $this->mentor_end_time;
+        }
+
+        /**
+         * Set the value of mentor_end_time
+         *
+         * @return  self
+         */ 
+        public function setMentor_end_time($mentor_end_time)
+        {
+                $this->mentor_end_time = $mentor_end_time;
 
                 return $this;
         }
