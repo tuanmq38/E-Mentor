@@ -15,9 +15,9 @@ class MentorDAO {
     // CREATE NEW MENTOR
     static function createMentor(Mentor $newMentor) {
         
-        $sql = "INSERT INTO (mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender, mentor_degree,
+        $sql = "INSERT INTO Mentor (mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender, mentor_degree,
                 mentor_expert_field, mentor_schedule_date, mentor_start_time, mentor_end_time)
-                VALUES(:mentor_id, :mentor_email, :mentor_first_name, :mentor_last_name, :mentor_gender, :mentor_degree,
+                VALUES (:mentor_id, :mentor_email, :mentor_first_name, :mentor_last_name, :mentor_gender, :mentor_degree,
                 :mentor_expert_field, :mentor_schedule_date, :mentor_start_time, :mentor_end_time)";
         
         self::$db->query($sql);
@@ -35,7 +35,7 @@ class MentorDAO {
 
         self::$db->execute();
 
-        return self::$db->lastInsertId();
+        return self::$db->lastInsertedId();
 
     }
 
@@ -62,14 +62,16 @@ class MentorDAO {
     }
 
     // DETELE MENTOR
-    static function deleteMentor(string $mentorId) {
-        $sql = "DELETE * FROM Mentor WHERE mentor_id =:mentor_id";
+    static function deleteMentor(int $mentorID) {
+        $sql = "DELETE FROM Mentor WHERE mentor_id=:mentor_id";
 
         try {
             self::$db->query($sql);
-            self::$db->bind(':mentor_id', $mentorId);
+            self::$db->bind(':mentor_id', $mentorID);
             self::$db->execute();
-
+            if(self::$db->rowCount() != 1) {
+                throw new PDOException("Problem when deleting reservation $mentorID");
+            }
         } catch (PDOException $e) {
             echo $e->getMessage();
             
@@ -82,10 +84,12 @@ class MentorDAO {
     static function updateMentor(Mentor $updateMentor) {
         $sql = "UPDATE Mentor
                 SET mentor_email=:mentor_email, mentor_first_name=:mentor_first_name, mentor_last_name=:mentor_last_name,
-                mentor_gender=:mentor_gender, mentor_degree=:mentor_degree, mentor_expert_fiel:mentor_expert_field,
+                mentor_gender=:mentor_gender, mentor_degree=:mentor_degree, mentor_expert_field=:mentor_expert_field,
                 mentor_schedule_date=:mentor_schedule_date, mentor_start_time=:mentor_start_time, mentor_end_time=:mentor_end_time
-                WHERE mentor_id =:mentor_id";
+                WHERE mentor_id=:mentor_id";
         
+        self::$db->query($sql);
+
         self::$db->bind(':mentor_id', $updateMentor->getMentor_id());
         self::$db->bind(':mentor_email', $updateMentor->getMentor_email());
         self::$db->bind(':mentor_first_name', $updateMentor->getMentor_first_name());

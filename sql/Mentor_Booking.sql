@@ -5,38 +5,38 @@ USE Mentor_Booking;
 -- Create table User
 create table Admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
-	full_name VARCHAR(100),	
-	username VARCHAR(20),
-    email VARCHAR(100),
-	password VARCHAR(250)
+	full_name VARCHAR(100) NOT NULL,	
+	username VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+	password VARCHAR(250) NOT NULL,
+    role enum('admin', 'user')
 ) Engine=InnoDB;
 
-INSERT INTO Admin (full_name, username, email, password) 
-VALUES ('admin', 'admindemo', 'admin@ad.ca', '$apr1$r0g82q3p$A5cuVu2FzlBfkl9.auI.X1');
+INSERT INTO Admin (full_name, username, email, password, role) 
+VALUES ('admin', 'admindemo', 'admin@ad.ca', '$apr1$r0g82q3p$A5cuVu2FzlBfkl9.auI.X1', 'admin');
 
 -- Create table Metor
 create table Mentor (
     mentor_id TINYINT(3) AUTO_INCREMENT PRIMARY KEY,
     mentor_email VARCHAR(100) NOT NULL,
-    mentor_fist_name VARCHAR(50) NOT NULL,
+    mentor_first_name VARCHAR(50) NOT NULL,
     mentor_last_name VARCHAR(50) NOT NULL,
     mentor_gender enum('Male','Female','Other') NOT NULL,
     mentor_degree VARCHAR(250) NOT NULL,
-    mentor_expert_field enum('Training','Motivation','Advice', 'Coaching', 'Support') NOT NULL,
+    mentor_expert_field VARCHAR(250) NOT NULL,
     mentor_schedule_date date NOT NULL, -- format YYYY-MM-DD
     mentor_start_time time NOT NULL, -- format 00:00:00
     mentor_end_time time NOT NULL -- format 00:00:00
 ) Engine=InnoDB;
 
-INSERT INTO Mentor (mentor_id, mentor_email, mentor_fist_name, mentor_last_name, mentor_gender, mentor_degree, mentor_expert_field, mentor_schedule_date, mentor_start_time, mentor_end_time)
-VALUES (1, 'johnd@mentor.ca', 'John', 'Doe', 'Male', 'MBA', 'Training', "2022-10-12", "9:00:00", "12:00:00");
+INSERT INTO Mentor (mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender, mentor_degree, mentor_expert_field, mentor_schedule_date, mentor_start_time, mentor_end_time)
+VALUES (1, 'johnd@mentor.ca', 'John', 'Doe', 'Male', 'MBA', 'Business', "2022-10-12", "9:00", "12:00");
 
 
 -- Create table Mentee
 create table Mentee (
     mentee_id TINYINT(3) AUTO_INCREMENT PRIMARY KEY,
     mentee_email VARCHAR(100) NOT NULL,
-    password VARCHAR(250),
     mentee_fist_name VARCHAR(50) NOT NULL,
     mentee_last_name VARCHAR(50) NOT NULL,
     mentee_dob date NOT NULL, -- format YYYY-MM-DD
@@ -45,8 +45,8 @@ create table Mentee (
     mentee_status VARCHAR(200) 
 ) Engine=InnoDB;
 
-INSERT INTO Mentee (mentee_id, mentee_email, password, mentee_fist_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
-VALUES (1, 'anneg@mentee.ca', "test123", 'Anne', 'Green', '1994-02-17', 'Female', '12384456734');
+INSERT INTO Mentee (mentee_id, mentee_email, mentee_fist_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
+VALUES (1, 'anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734');
 
 
 -- Crete table Appointment

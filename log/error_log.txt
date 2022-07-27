@@ -1,0 +1,148 @@
+[27-Jul-2022 04:22:47 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender,...' at line 1 in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(30): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:29:49 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 20
+[27-Jul-2022 04:29:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender,...' at line 1 in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:30:55 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 20
+[27-Jul-2022 04:30:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender,...' at line 1 in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:31:32 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender,...' at line 1 in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:35:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(mentor_id, mentor_email, mentor_first_name, mentor_last_name, mentor_gender,...' at line 1 in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:36:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::lastInsertId() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:38
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 38
+[27-Jul-2022 04:37:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'PRIMARY' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:40:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'PRIMARY' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:41:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'PRIMARY' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(36): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(31): MentorDAO::createMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 04:43:51 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 37
+[27-Jul-2022 04:43:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::deleteMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 37 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:65
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(37): MentorDAO::deleteMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 65
+[27-Jul-2022 04:46:10 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 37
+[27-Jul-2022 04:46:10 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::deleteMentor(): Argument #1 ($mentorID) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 37 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:65
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(37): MentorDAO::deleteMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 65
+[27-Jul-2022 04:51:20 Europe/Berlin] PHP Warning:  Undefined array key "mentorID" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 37
+[27-Jul-2022 04:51:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::deleteMentor(): Argument #1 ($mentorID) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php on line 37 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:65
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(37): MentorDAO::deleteMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 65
+[27-Jul-2022 05:05:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mentor_booking.mentor' doesn't exist in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(48): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(40): MentorDAO::getMentors()
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 05:05:24 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mentor_booking.mentor' doesn't exist in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(48): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(40): MentorDAO::getMentors()
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 05:21:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bindValue() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:79
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(91): PDOService->bind(':mentor_id', NULL)
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#2 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 79
+[27-Jul-2022 05:24:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bindValue() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:79
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(91): PDOService->bind(':mentor_id', NULL)
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#2 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 79
+[27-Jul-2022 05:26:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bindValue() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:79
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(91): PDOService->bind(':mentor_id', NULL)
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#2 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 79
+[27-Jul-2022 05:27:15 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(104): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 05:28:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(104): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 05:30:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(104): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 05:31:46 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mentor_expert_fiel' in 'field list' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(104): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
+[27-Jul-2022 05:32:01 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mentor_expert_fiel' in 'field list' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(104): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mainpage.php(47): MentorDAO::updateMentor(Object(Mentor))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 85
