@@ -1,5 +1,4 @@
 <?php
-
 // require the config
 require_once('inc/config.inc.php');
 
@@ -10,7 +9,6 @@ require_once('inc/Entity/Page.class.php');
 // require all the utilities: PDO and DAO(s)
 require_once('inc/Utility/PDOService.class.php');
 require_once('inc/Utility/MentorDAO.class.php');
-
 
 MentorDAO::init("Mentor");
 
@@ -56,7 +54,8 @@ if (isset($_GET["action"]) && $_GET["action"] == "delete")  {
 
 $mentors =MentorDAO::getMentors();
 
-Page::header();
+Page::displayHeader();
+Page::navbar();
 Page::listMentors($mentors);
 if(!empty($_GET)) {
     if (isset($_GET["action"]) && $_GET["action"] == "edit")
@@ -66,7 +65,3 @@ if(!empty($_GET)) {
 } else
     Page::addMentorForm();
 Page::footer();
-
-
-
-?>

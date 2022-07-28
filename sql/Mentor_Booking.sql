@@ -3,17 +3,17 @@ CREATE DATABASE IF NOT EXISTS Mentor_Booking;
 USE Mentor_Booking;
 
 -- Create table User
-create table Admin (
+create table users (
     id INT AUTO_INCREMENT PRIMARY KEY,
 	full_name VARCHAR(100) NOT NULL,	
 	username VARCHAR(20) NOT NULL,
+    password VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-	password VARCHAR(250) NOT NULL,
-    role enum('admin', 'user')
+    user_role VARCHAR(100)
 ) Engine=InnoDB;
 
-INSERT INTO Admin (full_name, username, email, password, role) 
-VALUES ('admin', 'admindemo', 'admin@ad.ca', '$apr1$r0g82q3p$A5cuVu2FzlBfkl9.auI.X1', 'admin');
+INSERT INTO users (full_name, username, password, email, user_role) 
+VALUES ('admin demo', 'admindemo', '$2y$10$fmuNItw6JmdFVhZA6FLkUuaom2dS4vs0.hfi880j4t9W7HOSm9xXm', 'admin@ad.ca', 'admin');
 
 -- Create table Metor
 create table Mentor (

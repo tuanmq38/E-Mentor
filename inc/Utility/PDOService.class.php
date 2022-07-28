@@ -5,110 +5,100 @@
 // Other than that, this code is complete.
 class PDOService {
 
-    //Pull in the attributes from the config
-    private  $_host = DB_HOST;  
-    private  $_user = DB_USER;  
-    private  $_pass = DB_PASS;  
-    private  $_dbname = DB_NAME;  
-    private  $_dbport = DB_PORT; 
+   //Connection Details. Make sure to set up the config.inc.php
+   private $host = DB_HOST;
+   private $user = DB_USER;
+   private $password = DB_PASSWORD;
+   private $dbname = DB_NAME;
+   private $dbport = DB_PORT;
 
-    //Store the PDO Object
-    private  $_dbh;
-    private  $_error;
+   private $dsn = "";          //Data Source Name
+   private $className = "";    //Name of the class we are mapping with this PDO Agent
+   private $error = "";        //Store any error messages
+   private $stmt;         //Stores our statement instance
+   private $pdo = "";          //Store our local instantiation of the PDO driver
+   
 
-    //Store the class we will be working with;
-    private $_className;
+   // make the connection. Make sure to set the DSN
+   public function __construct(string $className)  {
 
-    //Store the Query Statement;
-    private  $_pstmt;
+       //Store the local class name
+       $this->className = $className;
 
+       //Build the DSN
+       $this->dsn = "mysql:localhost=" .$this->host.";dbname=".$this->dbname.";port=".$this->dbport;
+       
+       //set PDO options
+       $options = array(
+           PDO::ATTR_PERSISTENT => true,
+           PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+       );
 
-    //Construct our wrapper, build the DSN
-    public function __construct(string $className) {
-        
-        $this->_className = $className;
+       try {
+           //Instantiate the PDO library inside our wrapper class
+           $this->pdo = new PDO($this->dsn, $this->user, $this->password, $options);
+       } catch (Exception $ex) {
+           $this->error = $ex->getMessage();
+           echo $this->error;
+   }
+}
 
-        //Assemble the DSN (Data Source Name)
-        $dsn = "mysql:host=" .$this->_host .";dbname=".$this->_dbname.";port=".$this->_dbport; 
-        
-        //Set the options for PDO
-        $options = array (
-            PDO::ATTR_PERSISTENT => true,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION );
-        
+   //Prepare the statement for execution
+   public function query(string $query)    {
+       $this->stmt  = $this->pdo->prepare($query);
+   }
 
-        //Try to get a PDO class
-        try {
-            $this->_dbh = new PDO($dsn, $this->_user, $this->_pass, $options);
-        } catch (PDOException $pe)   {
-            $this->_error = $pe->getMessage();
-        }
+   //Bind the values, select the appropriate type
+   public function bind($param, $value, $type = null){  
+       if (is_null($type)) {  
 
-    }
+           switch (true) {  
+               case is_int($value):  
+               $type = PDO::PARAM_INT;  
+               break;  
+               case is_bool($value):  
+               $type = PDO::PARAM_BOOL;  
+               break;  
+               case is_null($value):  
+               $type = PDO::PARAM_NULL;  
+               break;  
+               default:  
+               $type = PDO::PARAM_STR;  
+               }  
+       }  
+       $this->stmt->bindValue($param, $value, $type);  
+   }  
 
-    //This function prepares a query that has be passed
-    public function query(string $query)    {
-        $this->_pstmt = $this->_dbh->prepare($query);
-    }
+   //Execute the statement
+   public function execute($data = null)   {
+       if (is_null($data)) {
+           return $this->stmt->execute();
+       } else {
+           return $this->stmt->execute($data);
+       }
+   }
 
-    //This function binds parameters
-    public function bind($param, $value, $type=null)    {
+   //Return a single result
+   public function singleResult()  {
+       
+       //Set the fetch mode
+       $this->stmt->setFetchMode(PDO::FETCH_CLASS, $this->className);
+       //Return the result
+       return $this->stmt->fetch(PDO::FETCH_CLASS);
+   }
 
-        if (is_null($type)) {  
-            switch (true) {
-                //If the value is an integer
-                case is_int($value):  
-                $type = PDO::PARAM_INT;  
-                break;  
-                //If the value is a boolean
-                case is_bool($value):  
-                $type = PDO::PARAM_BOOL;  
-                break;  
-                //If the value is null
-                case is_null($value):  
-                $type = PDO::PARAM_NULL;  
-                break;  
-                //If nothing else the value must be a string
-                default:  
-                $type = PDO::PARAM_STR;  
-                break;
-                }  
-            }
-            
-        //Finally lets bind the paremter
-        $this->_pstmt->bindValue($param, $value, $type);  
+   //Return multiple results
+   public function getResultSet()  {
 
-    }
+       return $this->stmt->fetchAll(PDO::FETCH_CLASS, $this->className);
+   }
 
-    //This function will excute the statement when its ready.
-    public function execute()   {
-        return $this->_pstmt->execute();
-    }
+   public function rowCount() : int {
+       return $this->stmt->rowCount();
+   }
 
-    //This function will return the result of the executed query
-    public function resultSet() {
-        
-        //Return Classes!
-        return $this->_pstmt->fetchAll(PDO::FETCH_CLASS, $this->_className);
-    }
-
-    //This function will return a single result of the executed Query
-    public function singleResult()  {
-
-        //Set the fetch mode
-        $this->_pstmt->setFetchMode(PDO::FETCH_CLASS, $this->_className);
-        //Return the result
-        return $this->_pstmt->fetch(PDO::FETCH_CLASS);
-    }
-
-    //This function returns the rowCount
-    public function rowCount()  {
-        return $this->_pstmt->rowCount();
-    }
-
-    //This function will return the last inserted Id
-    public function lastInsertedId()  {
-        return $this->_dbh->lastInsertId();
-    }
+   public function lastInsertedId() : int {
+       return $this->pdo->lastInsertId();
+   }
 
 }

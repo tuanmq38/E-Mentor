@@ -5,11 +5,11 @@ class User {
     private $full_name;
     private $username;
     private $email;
+    private $user_role;
     private $password;
 
-      // function to verify the provided $_POST['password']
-      function verifyPassword($password){
-        return password_verify($password, $this->password);
+    public function verifyPassword(string $passwordToVerify) {
+        return password_verify($passwordToVerify, $this->password);
     }
 
     /**
@@ -42,6 +42,16 @@ class User {
     public function getEmail()
     {
         return $this->email;
+    }
+
+  
+
+    /**
+     * Get the value of user_role
+     */ 
+    public function getUser_role()
+    {
+        return $this->user_role;
     }
 }
 

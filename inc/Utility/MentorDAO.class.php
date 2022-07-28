@@ -47,7 +47,7 @@ class MentorDAO {
 
         self::$db->execute();
 
-        return self::$db->resultSet();
+        return self::$db->getResultSet();
     }
 
     // GET SPECIFIC MENTOR
