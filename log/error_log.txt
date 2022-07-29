@@ -68,3 +68,215 @@ Stack trace:
 #2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(46): MentorDAO::createMentor(Object(Mentor))
 #3 {main}
   thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[28-Jul-2022 06:19:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Page::navbar() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php:35
+Stack trace:
+#0 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php on line 35
+[28-Jul-2022 18:23:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:48
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\UserDAO.class.php(16): PDOService->query('SELECT * FROM u...')
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php(16): UserDAO::getUser('admindemo')
+#2 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 48
+[29-Jul-2022 01:59:50 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'mentor_booking.users' doesn't exist in engine in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\UserDAO.class.php(18): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php(16): UserDAO::getUser('admindemo')
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[29-Jul-2022 02:20:03 Europe/Berlin] PHP Warning:  Undefined variable $authUser in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php on line 29
+[29-Jul-2022 02:20:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getUser_role() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php:29
+Stack trace:
+#0 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php on line 29
+[29-Jul-2022 02:40:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:46
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_listings.php(14): MentorDAO::getMentors()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 46
+[29-Jul-2022 04:22:22 Europe/Berlin] PHP Warning:  Undefined variable $mentor in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 333
+[29-Jul-2022 04:22:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMentor_id() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php:333
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(22): Page::addMenteeForm()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 333
+[29-Jul-2022 04:23:32 Europe/Berlin] PHP Warning:  Undefined variable $mentor in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 333
+[29-Jul-2022 04:23:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMentor_id() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php:333
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(22): Page::addMenteeForm()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 333
+[29-Jul-2022 04:23:33 Europe/Berlin] PHP Warning:  Undefined variable $mentor in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 333
+[29-Jul-2022 04:23:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMentor_id() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php:333
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(22): Page::addMenteeForm()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 333
+[29-Jul-2022 04:25:37 Europe/Berlin] PHP Warning:  Undefined variable $mentor in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 324
+[29-Jul-2022 04:25:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMentor_id() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php:324
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(22): Page::addMenteeForm()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Page.class.php on line 324
+[29-Jul-2022 04:48:20 Europe/Berlin] PHP Warning:  Undefined variable $authUser in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php on line 30
+[29-Jul-2022 04:48:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getUser_role() on null in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php:30
+Stack trace:
+#0 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Admin_login_page.php on line 30
+[29-Jul-2022 04:51:28 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 21
+[29-Jul-2022 04:51:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 21 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(21): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:51:49 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 22
+[29-Jul-2022 04:51:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 22 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(22): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:51:50 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 22
+[29-Jul-2022 04:51:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 22 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(22): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:52:18 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 04:52:18 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:52:20 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 04:52:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:53:13 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 04:53:13 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:55:59 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 04:55:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:56:37 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24
+[29-Jul-2022 04:56:37 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(24): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 04:57:00 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24
+[29-Jul-2022 04:57:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(24): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:05:25 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24
+[29-Jul-2022 05:05:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(24): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:05:25 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24
+[29-Jul-2022 05:05:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 24 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(24): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:05:42 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:05:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:05:42 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:05:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:06:47 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:06:47 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:06:47 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:06:47 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:06:49 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:06:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:06:49 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:06:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:07:05 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:07:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:07:05 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:07:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:07:35 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:07:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:07:35 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:07:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:08:01 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:08:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:08:01 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:08:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:08:29 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:08:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:08:29 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:08:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54
+[29-Jul-2022 05:08:39 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23
+[29-Jul-2022 05:08:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getMentor(): Argument #1 ($mentorId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 23 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:54
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(23): MentorDAO::getMentor(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 54

@@ -1,13 +1,13 @@
 <?php
-// require the config
 require_once('inc/config.inc.php');
 
-// require all the entities
-require_once('inc/Entity/Mentor.class.php');
 require_once('inc/Entity/Page.class.php');
+require_once('inc/Entity/User.class.php');
+require_once('inc/Entity/Mentor.class.php');
 
-// require all the utilities: PDO and DAO(s)
+require_once('inc/Utility/LoginManager.class.php');
 require_once('inc/Utility/PDOService.class.php');
+require_once('inc/Utility/UserDAO.class.php');
 require_once('inc/Utility/MentorDAO.class.php');
 
 MentorDAO::init("Mentor");
@@ -52,11 +52,11 @@ if (isset($_GET["action"]) && $_GET["action"] == "delete")  {
     MentorDAO::deleteMentor($_GET['mentor_id']);
 }
 
-$mentors =MentorDAO::getMentors();
+$mentors = MentorDAO::getMentors();
 
 Page::displayHeader();
-Page::navbar();
-Page::listMentors($mentors);
+Page::navbarAdmin();
+Page::manageMentors($mentors);
 if(!empty($_GET)) {
     if (isset($_GET["action"]) && $_GET["action"] == "edit")
         Page::editMentor(MentorDAO::getMentor($_GET['mentor_id']));

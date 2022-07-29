@@ -11,10 +11,10 @@ require_once('inc/Utility/UserDAO.class.php');
 require_once('inc/Utility/MentorDAO.class.php');
 
 UserDAO::init();
+$authUser;
 
 if(!empty($_POST['username'])){
     $authUser = UserDAO::getUser($_POST['username']);
-
     // check if the user exists or not
     // check if the password is verified
     if($authUser && $authUser->verifyPassword($_POST['password'])){
@@ -33,7 +33,7 @@ if(LoginManager::verifyLogin()) {
 else {
     Page::displayHeader();
     Page::navbar();
-    Page::displayLoginForm();
+    Page::adminLoginForm();
     Page::footer();
 }
 
