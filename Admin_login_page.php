@@ -11,7 +11,6 @@ require_once('inc/Utility/UserDAO.class.php');
 require_once('inc/Utility/MentorDAO.class.php');
 
 UserDAO::init();
-$authUser;
 
 if(!empty($_POST['username'])){
     $authUser = UserDAO::getUser($_POST['username']);

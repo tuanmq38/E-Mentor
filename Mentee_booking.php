@@ -15,12 +15,29 @@ require_once('inc/Utility/MentorDAO.class.php');
 
 
 MenteeDao::init("Mentee");
-MentorDAO::init("Mentor");
 
+if (!empty($_POST)) {
+    if(isset($_POST['action']) && $_POST['action'] == "create") {
+        $newMentee = new Mentee();
+
+        $newMentee->setMentee_first_name($_POST['mentee_first_name']);
+        $newMentee->setMentee_last_name($_POST['mentee_last_name']);
+        $newMentee->setMentee_email($_POST['mentee_email']);
+        $newMentee->setMentee_gender($_POST['mentee_gender']);
+        $newMentee->setMentee_dob($_POST['mentee_dob']);
+        $newMentee->setMentee_phone_no($_POST['mentee_phone_no']);
+        $newMentee->setMentee_status($_POST['mentee_status']);
+
+        MenteeDAO::createMentee($newMentee);
+
+        header("Location: Thank_you_page.php");
+        
+    }
+}
 
 Mentee_Page::displayHeader();
 Mentee_Page::navbar();
-Mentee_Page::menteeBookForm(MentorDAO::getMentor($_GET['mentor_id']));
+Mentee_Page::menteeBookForm();
 Mentee_Page::footer();
 
 ?>

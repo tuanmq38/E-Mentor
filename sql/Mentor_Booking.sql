@@ -40,7 +40,7 @@ VALUES
 create table Mentee (
     mentee_id TINYINT(3) AUTO_INCREMENT PRIMARY KEY,
     mentee_email VARCHAR(100) NOT NULL,
-    mentee_fist_name VARCHAR(50) NOT NULL,
+    mentee_first_name VARCHAR(50) NOT NULL,
     mentee_last_name VARCHAR(50) NOT NULL,
     mentee_dob date NOT NULL, -- format YYYY-MM-DD
     mentee_gender enum('Male','Female','Other') NOT NULL,
@@ -48,7 +48,7 @@ create table Mentee (
     mentee_status VARCHAR(200) 
 ) Engine=InnoDB;
 
-INSERT INTO Mentee (mentee_email, mentee_fist_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
+INSERT INTO Mentee (mentee_email, mentee_first_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
 VALUES 
 ('anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734'),
 ('jackr@mentee.ca', 'Jack', 'Rode', '1997-03-06', 'Male', '12364498765');

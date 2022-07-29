@@ -52,11 +52,11 @@ class Mentee_Page
 
     <?php }
 
-    static function menteeBookForm(Mentor $mentor)
+    static function menteeBookForm()
     {
     ?>
         <section class="form-group">
-            <h3>Add a New Mentor</h3>
+            <h3>Booking Appointment</h3>
             <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
                 <table>
                     <tr>
@@ -88,7 +88,7 @@ class Mentee_Page
                     </tr>
                     <tr>
                         <td>Phone Number</td>
-                        <td><input type="time" name="mentee_phone_no" id="mentee_phone_no"></td>
+                        <td><input type="text" name="mentee_phone_no" id="mentee_phone_no"></td>
                     </tr>
                     <tr>
                         <td>Status</td>
@@ -98,8 +98,8 @@ class Mentee_Page
                 </table>
                 <!-- Use input type hidden to let us know that this action is to create record -->
                 <input type="hidden" name="action" value="create">
-                <input type="hidden" name="mentor_id" value="<?=$mentor->getMentor_id(); ?>">
                 <input type="submit" value="Make Appointment">
+
             </form>
         </section>
 <?php
