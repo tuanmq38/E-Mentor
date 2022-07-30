@@ -60,11 +60,6 @@ class Mentee_Page
             <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
                 <table>
                     <tr>
-
-                    <tr>
-                        <td><input type="hidden" name="mentee_id" id="mentee_id" placeholder="id"></td>
-                    </tr>
-
                     <tr>
                         <td>First Name</td>
                         <td><input type="text" name="mentee_first_name" id="mentee_first_name" placeholder="First Name"></td>

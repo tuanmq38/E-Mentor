@@ -627,3 +627,144 @@ Stack trace:
 #3 {main}
   thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
 [30-Jul-2022 02:18:02 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 107
+[30-Jul-2022 03:54:15 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:54:59 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:55:00 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:57:55 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:59:37 Europe/Berlin] PHP Warning:  Undefined array key "mentee_dob" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:59:38 Europe/Berlin] PHP Warning:  Undefined array key "mentee_dob" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:59:39 Europe/Berlin] PHP Warning:  Undefined array key "mentee_dob" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 03:59:57 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 04:00:10 Europe/Berlin] PHP Warning:  Undefined array key "mentee_dob" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 108
+[30-Jul-2022 04:00:58 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:01:47 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:01:48 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:01:49 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:01:56 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:02:03 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:02:04 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:03:56 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:05:20 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:05:22 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:05:36 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:06:56 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:07:07 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:08:48 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:09:01 Europe/Berlin] PHP Warning:  Undefined variable $mentee in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 50
+[30-Jul-2022 04:09:01 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:09:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mentor_booking`.`appointment`, CONSTRAINT `appointment_ibfk_2` FOREIGN KEY (`mentee_id`) REFERENCES `mentee` (`mentee_id`)) in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(20): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(52): AppointmentDAO::makeAppointment(Object(Appointment))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 04:09:27 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mentor_booking`.`appointment`, CONSTRAINT `appointment_ibfk_2` FOREIGN KEY (`mentee_id`) REFERENCES `mentee` (`mentee_id`)) in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(20): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(52): AppointmentDAO::makeAppointment(Object(Appointment))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 04:09:59 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:10:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mentor_booking`.`appointment`, CONSTRAINT `appointment_ibfk_2` FOREIGN KEY (`mentee_id`) REFERENCES `mentee` (`mentee_id`)) in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(20): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(46): AppointmentDAO::makeAppointment(Object(Appointment))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 04:10:41 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:10:52 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:12:15 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:12:27 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:13:09 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:14:28 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:14:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:14:42 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:14:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:14:43 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:14:43 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:14:54 Europe/Berlin] PHP Warning:  Undefined array key "mentor_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 60
+[30-Jul-2022 04:14:54 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 61
+[30-Jul-2022 04:14:54 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 61 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(61): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:15:39 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:15:42 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:16:29 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mentor_booking`.`appointment`, CONSTRAINT `appointment_ibfk_2` FOREIGN KEY (`mentee_id`) REFERENCES `mentee` (`mentee_id`)) in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(20): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(46): AppointmentDAO::makeAppointment(Object(Appointment))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 04:18:29 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 60
+[30-Jul-2022 04:18:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 60 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(60): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:19:28 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:19:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:19:29 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:19:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:19:30 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:19:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:19:31 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57
+[30-Jul-2022 04:19:31 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 57 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(57): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:21:15 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:21:16 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:21:17 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:21:17 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:25:23 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:25:24 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Mentee_Page.class.php on line 103
+[30-Jul-2022 04:30:25 Europe/Berlin] PHP Warning:  Undefined array key "mentee_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 41
+[30-Jul-2022 04:30:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MenteeDao::getMentee(): Argument #1 ($menteeId) must be of type string, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php on line 41 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(41): MenteeDao::getMentee(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MenteeDAO.class.php on line 36
+[30-Jul-2022 04:31:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(20): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(45): AppointmentDAO::makeAppointment(Object(Appointment))
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 04:31:36 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PDOService::bind(), 1 passed in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 18 and at least 2 expected in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:52
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(18): PDOService->bind(':mentee_id')
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(45): AppointmentDAO::makeAppointment(Object(Appointment))
+#2 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 52

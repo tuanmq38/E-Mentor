@@ -27,7 +27,6 @@ if (!empty($_POST)) {
             // Create new mentee and save on the database
             $newMentee = new Mentee();
 
-            $newMentee->setMentee_id($_POST['mentee_id']);
             $newMentee->setMentee_first_name($_POST['mentee_first_name']);
             $newMentee->setMentee_last_name($_POST['mentee_last_name']);
             $newMentee->setMentee_email($_POST['mentee_email']);
@@ -39,14 +38,11 @@ if (!empty($_POST)) {
 
             MenteeDAO::createMentee($newMentee);
 
-            // $mentee = $newMentee->getMentee_id();
+            $newAppointment = new Appointment();
 
-            // $newAppointment = new Appointment();
+            $newAppointment->setMentor_id($_POST['mentor_id']);
 
-            // $newAppointment->setMentor_id($_POST['mentor_id']);
-            // $newAppointment->setMentee_id($mentee);
-
-            // AppointmentDAO::makeAppointment($newAppointment);
+            AppointmentDAO::makeAppointment($newAppointment);
 
 
             header("Location: Thank_you_page.php");
@@ -56,9 +52,6 @@ if (!empty($_POST)) {
     }
 }
 
-
-// $mentor = MentorDAO::getMentor($_GET['mentor_id']);
-// MenteeDao::getMentee($_GET['mentee_id']);
 
 Mentee_Page::displayHeader();
 Mentee_Page::navbar();

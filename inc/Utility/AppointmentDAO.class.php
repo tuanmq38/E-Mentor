@@ -15,7 +15,8 @@ class AppointmentDAO {
         self::$db->query($sql);
 
         self::$db->bind(':mentor_id', $appointment->getMentor_id());
-        self::$db->bind(':mentee_id', $appointment->getMentee_id());
+        self::$db->bind(':mentee_id', self::$db->lastInsertedId());
+
 
         self::$db->execute();
 
