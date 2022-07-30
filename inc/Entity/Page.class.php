@@ -60,12 +60,15 @@ class Page
                                 <a class="nav-link active" aria-current="page" href="Homepage.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Appointments</a>
+                                <a class="nav-link active" aria-current="page" href="Mentor_management.php">Mentors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Appointment_listings.php">Appointments</a>
                             </li>
                     </div>
                     <div class="navbar">
                         <div class="col-md-6">
-                            <a class="btn btn-primary" href="admin_logout.php" role="button">Logout</a>
+                            <a class="btn btn-danger" href="admin_logout.php" role="button">Logout</a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +188,7 @@ class Page
 
                             $mentorID = "?mentor_id=" . $mentor->getMentor_id();
                             $link = "Mentee_booking.php";
-                            echo "<td><a href=\"" .$link  . $mentorID . "\">Booking</td>";
+                            echo "<td><a href=\"" .$link  . $mentorID . "\">Book</td>";
 
                             $i++;
                         }

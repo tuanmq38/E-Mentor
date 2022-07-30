@@ -50,7 +50,7 @@ class MenteeDao {
 
         self::$db->execute();
 
-        return self::$db->resultSet();
+        return self::$db->getResultSet();
     }
 }
 

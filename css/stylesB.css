@@ -4,8 +4,8 @@ html{
 body{
     background-color: azure;
     border: 1px solid black;
-    display: table;
-    width: 75%;
+    display: inline-block;
+    width: 100%;
     margin: auto;
     min-height: 900px;
     padding: 20px;

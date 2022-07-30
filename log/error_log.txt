@@ -768,3 +768,61 @@ Stack trace:
 #1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentee_booking.php(45): AppointmentDAO::makeAppointment(Object(Appointment))
 #2 {main}
   thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 52
+[30-Jul-2022 19:00:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::resultSet() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 36
+[30-Jul-2022 19:02:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::resultSet() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 36
+[30-Jul-2022 19:02:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::resultSet() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php:36
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 36
+[30-Jul-2022 19:13:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Appointment.appoitnment_id' in 'field list' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(38): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 19:13:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Appointment.appoitnment_id' in 'field list' in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php(38): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[30-Jul-2022 19:13:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::resultSet() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php:40
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 40
+[30-Jul-2022 19:14:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::resultSet() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php:40
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(19): AppointmentDAO::getAppointments()
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 40
+[30-Jul-2022 19:18:27 Europe/Berlin] PHP Fatal error:  Class "Appointment" not found in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 93
+[30-Jul-2022 19:18:29 Europe/Berlin] PHP Fatal error:  Class "Appointment" not found in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 93
+[30-Jul-2022 19:19:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Appointment::getMentor_first_name() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php:37
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(21): Appointment_Page::displayAppointments(Array)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php on line 37
+[30-Jul-2022 19:20:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Appointment::getMentor_last_name() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php:38
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(21): Appointment_Page::displayAppointments(Array)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php on line 38
+[30-Jul-2022 19:35:24 Europe/Berlin] PHP Warning:  Undefined array key "appointment_id" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php on line 21
+[30-Jul-2022 19:35:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: AppointmentDAO::deleteAppointment(): Argument #1 ($appoitnmentID) must be of type int, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php on line 21 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php:44
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php(21): AppointmentDAO::deleteAppointment(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 44
+[30-Jul-2022 19:56:23 Europe/Berlin] PHP Warning:  Undefined array key "action" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php on line 19

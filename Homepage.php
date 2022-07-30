@@ -27,7 +27,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Admin_login_page.php">Login</a>
+          <a class="nav-link" href="Admin_login_page.php">Admin</a>
         </li>
         
       
@@ -45,8 +45,8 @@
             </div>
 
             <div class="col">
-                <h1 class="align-middle" style="color: #5fccac;">Welcome to Mentor.com</h1>
-                <h2 class="align-middle mt-4" style="color: black;">We help students to improve their grades</h2>
+                <h1 class="align-middle" style="color: #5fccac;">Welcome to E-Mentor</h1>
+                <h2 class="align-middle mt-4" style="color: black;">We are proud to contribute to mentee's growth, learning, and career development!</h2>
                 <a href="Mentor_listings.php" class="btn btn-primary mt-4" style="background-color: #5fccac; border: none; font-size: large;">Book Appointment</a>
             </div>
         </div>
@@ -63,7 +63,7 @@ bottom: 0;
 width: 100%;">
     <div class="text-center p-3" style="background-color: #5fccac;">
         © 2022 Copyright:
-        <a class="text-dark" href="#">E-Mentor.com</a>
+        <a class="text-dark" href="Homepage.php">E-Mentor.com</a>
     </div>
 </footer>
 
