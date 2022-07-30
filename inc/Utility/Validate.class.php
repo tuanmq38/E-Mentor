@@ -1,45 +1,53 @@
 <?php
 
-// See the textbook CH 9 for more information about string functions
- // create a function to validate the registration form
-    // Please use filter to validate the inputs whenever possible    
-    
-    // What to validate?
-    
-    // username should not be empty
-        // Also replace occurences of whitespace, semicolon, colon, comma, ampersand,
-        // dollar sign, < and > and any improper character with nothing    
+class Validate
+{
+    static $notifications = [];
 
-    // password
-        // should be a 5 digits string
-        // both password and password confirm needs to be exactly similar
-    
-    // Email should be email format
-
-    // One of the profile images must be chosen
-
-    // One of the not security questions should be selected
-
-    // The answer should not be empty
-
-    // the function should update the page's notifications
-    // you can also return some value to the calling function
-
-
-class Validate {
-    static function ValidateForm() {
+    static function ValidateForm()
+    {
         $valid = true;
 
-        
+        // First name no empty
 
+        if (strlen($_POST['mentee_first_name']) == 0) {
+            $valid = false;
+            self::$notifications['firstName'] = "Please enter your first name.";
+        }
+
+        // Last name no empty
+
+        if (strlen($_POST['mentee_last_name']) == 0) {
+            $valid = false;
+            self::$notifications['lastName'] = "Please enter your last name.";
+        }
+
+        // Validate Email address
+        if (!filter_input(INPUT_POST, "mentee_email", FILTER_VALIDATE_EMAIL)) {
+            $valid = false;
+            self::$notifications['email'] = "Please enter a valid email address.";
+        }
+
+        // Make sure gender is selected
+        if (isset($_REQUEST['mentee_gender']) && $_REQUEST['mentee_gender'] == 'Select your gender...') {
+            $valid = false;
+            self::$notifications['gender'] = "Please select your gender.";
+        }
+
+        // Phone number no empty
+        if (strlen($_POST['mentee_phone_no']) == 0) {
+            $valid = false;
+            self::$notifications['phoneNo'] = "Please enter your phone number.";
+        }
+
+        // Make sure dob is selected
+        $date = $_REQUEST['mentee_dob'];
+
+        if (!preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/", $date)) {
+            $valid = false;
+            self::$notifications['dob'] = "Please select your date of birth.";
+        } 
 
         return $valid;
     }
-
-   
-    
 }
-
-
-
-?>

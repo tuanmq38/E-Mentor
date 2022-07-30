@@ -48,21 +48,19 @@ create table Mentee (
     mentee_status VARCHAR(200) 
 ) Engine=InnoDB;
 
-INSERT INTO Mentee (mentee_email, mentee_first_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
-VALUES 
-('anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734'),
-('jackr@mentee.ca', 'Jack', 'Rode', '1997-03-06', 'Male', '12364498765');
+-- INSERT INTO Mentee (mentee_email, mentee_first_name, mentee_last_name, mentee_dob, mentee_gender, mentee_phone_no)
+-- VALUES 
+-- ('anneg@mentee.ca', 'Anne', 'Green', '1994-02-17', 'Female', '12384456734'),
+-- ('jackr@mentee.ca', 'Jack', 'Rode', '1997-03-06', 'Male', '12364498765');
 
 
 -- Crete table Appointment
 -- Assocciate Table
 create table Appointment (
     appointment_id TINYINT(3) AUTO_INCREMENT PRIMARY KEY,
-    mentor TINYINT(3),
-    mentee TINYINT(3),
-    FOREIGN KEY (mentor) REFERENCES Mentor (mentor_id),
-    FOREIGN KEY (mentee) REFERENCES Mentee (mentee_id)
+    mentor_id TINYINT(3),
+    mentee_id TINYINT(3),
+    FOREIGN KEY (mentor_id) REFERENCES Mentor (mentor_id),
+    FOREIGN KEY (mentee_id) REFERENCES Mentee (mentee_id)
 ) Engine=InnoDB;
 
-INSERT INTO Appointment (mentor, mentee)
-VALUES (1, 1);

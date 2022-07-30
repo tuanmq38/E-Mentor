@@ -125,6 +125,11 @@ form>div>*>*{
     flex: 1 1 30px;
 }
 
+div.highlight{
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+}
+
 /*
 table#list tr>td:nth-child(5){
     text-align: right;

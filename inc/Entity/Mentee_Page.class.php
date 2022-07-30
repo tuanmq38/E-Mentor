@@ -60,6 +60,11 @@ class Mentee_Page
             <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
                 <table>
                     <tr>
+
+                    <tr>
+                        <td><input type="hidden" name="mentee_id" id="mentee_id" placeholder="id"></td>
+                    </tr>
+
                     <tr>
                         <td>First Name</td>
                         <td><input type="text" name="mentee_first_name" id="mentee_first_name" placeholder="First Name"></td>
@@ -76,6 +81,7 @@ class Mentee_Page
                         <td>Gender</td>
                         <td>
                             <select type="text" name="mentee_gender" id="mentee_gender">
+                                <option value="Gender">Select your gender...</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Other">Other</option>
@@ -98,11 +104,31 @@ class Mentee_Page
                 </table>
                 <!-- Use input type hidden to let us know that this action is to create record -->
                 <input type="hidden" name="action" value="create">
+                <input type="hidden" name="mentor_id" value="<?= $_REQUEST['mentor_id'] ?>">
                 <input type="submit" value="Make Appointment">
+                
 
             </form>
         </section>
 <?php
+    }
+
+    static function displayErrorMessage($valid_status)
+    {
+        ?> 
+        <!-- Start the page's error notification -->
+        <div class="highlight">
+                    <p>Please fix the following errors:</p>
+                    <ul>
+                        <?php 
+                        foreach($valid_status as $error) {
+                            echo '<li>' .$error .'</li>';
+                           
+                        }
+                        ?>           
+                    </ul>                                        
+                </div>
+        <?php
     }
 }
 
