@@ -52,16 +52,28 @@ if (isset($_GET["action"]) && $_GET["action"] == "delete")  {
     MentorDAO::deleteMentor($_GET['mentor_id']);
 }
 
-$mentors = MentorDAO::getMentors();
-
-Page::displayHeader();
-Page::navbarAdmin();
-Page::manageMentors($mentors);
-if(!empty($_GET)) {
-    if (isset($_GET["action"]) && $_GET["action"] == "edit")
-        Page::editMentor(MentorDAO::getMentor($_GET['mentor_id']));
-    else
-        Page::addMentorForm();
-} else
+if (isset($_GET["keyword"]) && $_GET["keyword"]) {
+    $filteredMentor = MentorDAO::getRecord($_GET["keyword"]);
+    Page::displayHeader();
+    Page::navbarAdmin();
+    Page::searchRecord();
     Page::addMentorForm();
-Page::footer();
+    Page::manageMentors($filteredMentor);
+} else {
+    $mentors = MentorDAO::getMentors();
+
+    Page::displayHeader();
+    Page::navbarAdmin();
+    Page::searchRecord();
+    Page::manageMentors($mentors);
+    if(!empty($_GET)) {
+        if (isset($_GET["action"]) && $_GET["action"] == "edit")
+            Page::editMentor(MentorDAO::getMentor($_GET['mentor_id']));
+        else
+            Page::addMentorForm();
+    } else
+        Page::addMentorForm();
+    Page::footer();
+}
+
+

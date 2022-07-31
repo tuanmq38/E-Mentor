@@ -86,6 +86,22 @@ class Page
 
     <?php }
 
+    static function searchRecord()
+    {
+    ?>
+        <section>
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
+                <div class="input-group">
+                    <input type="search" name="keyword" class="form-control rounded" placeholder="Type name to search..." aria-label="Search" aria-describedby="search-addon" />
+                    <button type="submit" class="btn btn-outline-primary">Search</button>
+                </div>
+            </form>
+        </section>
+    <?php
+
+    
+    }
+
     static function manageMentors(array $mentors)
     {
     ?>
@@ -188,7 +204,7 @@ class Page
 
                             $mentorID = "?mentor_id=" . $mentor->getMentor_id();
                             $link = "Mentee_booking.php";
-                            echo "<td><a href=\"" .$link  . $mentorID . "\">Book</td>";
+                            echo "<td><a href=\"" . $link  . $mentorID . "\">Book</td>";
 
                             $i++;
                         }

@@ -106,5 +106,17 @@ class MentorDAO {
         return self::$db->rowCount();
     }
 
+
+    static function getRecord(string $searchMentor) {
+        $sql = "SELECT * FROM Mentor WHERE Mentor.mentor_first_name LIKE '%$searchMentor%'
+                OR Mentor.mentor_last_name LIKE '%$searchMentor%'";
+
+        self::$db->query($sql);
+
+        self::$db->execute();
+
+        return self::$db->getResultSet();
+    }
+
 }
 ?>

@@ -826,3 +826,40 @@ Stack trace:
 #1 {main}
   thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\AppointmentDAO.class.php on line 44
 [30-Jul-2022 19:56:23 Europe/Berlin] PHP Warning:  Undefined array key "action" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Appointment_listings.php on line 19
+[30-Jul-2022 20:21:14 Europe/Berlin] PHP Warning:  Undefined property: Appointment::$mentee_phone_no in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php on line 43
+[30-Jul-2022 20:21:14 Europe/Berlin] PHP Warning:  Undefined property: Appointment::$mentee_phone_no in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php on line 43
+[30-Jul-2022 20:21:14 Europe/Berlin] PHP Warning:  Undefined property: Appointment::$mentee_phone_no in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php on line 43
+[30-Jul-2022 20:21:14 Europe/Berlin] PHP Warning:  Undefined property: Appointment::$mentee_phone_no in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Entity\Appointment_Page.class.php on line 43
+[31-Jul-2022 03:09:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Page::manageMentors() in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php:59
+Stack trace:
+#0 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 59
+[31-Jul-2022 03:28:21 Europe/Berlin] PHP Warning:  Undefined array key "keyword" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 56
+[31-Jul-2022 03:28:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getRecord(): Argument #1 ($searchMentor) must be of type Mentor, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 56 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:110
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(56): MentorDAO::getRecord(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 110
+[31-Jul-2022 03:28:22 Europe/Berlin] PHP Warning:  Undefined array key "keyword" in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 56
+[31-Jul-2022 03:28:22 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getRecord(): Argument #1 ($searchMentor) must be of type Mentor, null given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 56 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:110
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(56): MentorDAO::getRecord(NULL)
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 110
+[31-Jul-2022 03:29:13 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getRecord(): Argument #1 ($searchMentor) must be of type Mentor, string given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 65 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:110
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(65): MentorDAO::getRecord('john')
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 110
+[31-Jul-2022 03:29:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: MentorDAO::getRecord(): Argument #1 ($searchMentor) must be of type Mentor, string given, called in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 65 and defined in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php:110
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(65): MentorDAO::getRecord('john')
+#1 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php on line 110
+[31-Jul-2022 03:37:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CONTAINS '%tony%'' at line 1 in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php:75
+Stack trace:
+#0 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php(75): PDOStatement->execute()
+#1 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\MentorDAO.class.php(115): PDOService->execute()
+#2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(65): MentorDAO::getRecord('tony')
+#3 {main}
+  thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75

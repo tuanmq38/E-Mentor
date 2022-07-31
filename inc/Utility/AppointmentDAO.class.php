@@ -28,7 +28,7 @@ class AppointmentDAO {
 
         $sql = "SELECT Appointment.appointment_id, Mentor.mentor_first_name, Mentor.mentor_last_name,
                         Mentor.mentor_schedule_date, Mentor.mentor_start_time, Mentor.mentor_end_time,
-                        Mentee.mentee_first_name, Mentee.mentee_last_name
+                        Mentee.mentee_first_name, Mentee.mentee_last_name, Mentee.mentee_phone_no
                 FROM Appointment
                 INNER JOIN Mentor ON Appointment.mentor_id=Mentor.mentor_id
                 INNER JOIN Mentee ON Appointment.mentee_id=Mentee.mentee_id";

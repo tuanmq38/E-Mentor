@@ -18,6 +18,7 @@ class Appointment_Page
                         <th scope="col">Mentor Last Name</th>
                         <th scope="col">Mentee First Name</th>
                         <th scope="col">Mentee Last Name</th>
+                        <th scope="col">Mentee Phone Number</th>
                         <th scope="col">Schedule Date</th>
                         <th scope="col">Start Time</th>
                         <th scope="col">End Time</th>
@@ -39,6 +40,7 @@ class Appointment_Page
             echo "<td>" . $appointment->mentor_last_name . "</td>";
             echo "<td>" . $appointment->mentee_first_name . "</td>";
             echo "<td>" . $appointment->mentee_last_name . "</td>";
+            echo "<td>" . $appointment->mentee_phone_no . "</td>";
             echo "<td>" . $appointment->mentor_schedule_date . "</td>";
             echo "<td>" . $appointment->mentor_start_time . "</td>";
             echo "<td>" . $appointment->mentor_end_time . "</td>";
