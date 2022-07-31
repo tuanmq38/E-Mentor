@@ -863,3 +863,4 @@ Stack trace:
 #2 D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php(65): MentorDAO::getRecord('tony')
 #3 {main}
   thrown in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\inc\Utility\PDOService.class.php on line 75
+[31-Jul-2022 03:57:46 Europe/Berlin] PHP Warning:  Array to string conversion in D:\Courses\CSIS-3280 Web Based Scripting\Project\PHP_Project\Mentor_management.php on line 59

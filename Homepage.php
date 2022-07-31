@@ -29,6 +29,9 @@
         <li class="nav-item">
           <a class="nav-link" href="Admin_login_page.php">Admin</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.php">About Us</a>
+        </li>
         
       
     </div>
@@ -41,12 +44,12 @@
         <div class="row align-items-center" style="margin-top: 120px;">
 
             <div class="col">
-                <img class="rounded" src="images/banner.jpeg" alt="banner" style="width: 600px;">
+                <img class="rounded" src="images/mentoring4.webp" alt="banner" style="width: 600px;">
             </div>
 
             <div class="col">
                 <h1 class="align-middle" style="color: #5fccac;">Welcome to E-Mentor</h1>
-                <h2 class="align-middle mt-4" style="color: black;">We are proud to contribute to mentee's growth, learning, and career development!</h2>
+                <h2 class="align-middle mt-4" style="color: black;">We are proud to contribute to personal's growth, learning, and career development!</h2>
                 <a href="Mentor_listings.php" class="btn btn-primary mt-4" style="background-color: #5fccac; border: none; font-size: large;">Book Appointment</a>
             </div>
         </div>

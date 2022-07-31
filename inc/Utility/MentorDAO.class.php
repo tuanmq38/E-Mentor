@@ -108,8 +108,8 @@ class MentorDAO {
 
 
     static function getRecord(string $searchMentor) {
-        $sql = "SELECT * FROM Mentor WHERE Mentor.mentor_first_name LIKE '%$searchMentor%'
-                OR Mentor.mentor_last_name LIKE '%$searchMentor%'";
+        $sql = "SELECT * FROM Mentor WHERE Mentor.mentor_first_name LIKE trim('%$searchMentor%')
+                OR Mentor.mentor_last_name LIKE trim('%$searchMentor%')";
 
         self::$db->query($sql);
 

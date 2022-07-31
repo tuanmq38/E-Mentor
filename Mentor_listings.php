@@ -12,12 +12,21 @@ require_once('inc/Utility/UserDAO.class.php');
 require_once('inc/Utility/MentorDAO.class.php');
 
 MentorDAO::init("Mentor");
-
-$mentors = MentorDAO::getMentors();
-
 Page::displayHeader();
 Page::navbar();
-Page::listMentors($mentors);
+Page::searchRecord();
+
+
+if (isset($_GET["keyword"]) && $_GET["keyword"]) {
+    $filteredMentor = MentorDAO::getRecord($_GET["keyword"]);
+    Page::listMentors($filteredMentor);
+
+} else {
+    $mentors = MentorDAO::getMentors();
+    Page::listMentors($mentors);
+}
+
+
 Page::footer();
 
 ?>

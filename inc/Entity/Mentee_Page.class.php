@@ -54,6 +54,7 @@ class Mentee_Page
 
     static function menteeBookForm()
     {
+        $valid_status = Validate::$notifications;
     ?>
         <section class="form-group">
             <h3>Booking Appointment</h3>
@@ -62,11 +63,23 @@ class Mentee_Page
                     <tr>
                     <tr>
                         <td>First Name</td>
-                        <td><input type="text" name="mentee_first_name" id="mentee_first_name" placeholder="First Name"></td>
+                        <td><input type="text" name="mentee_first_name" id="mentee_first_name" placeholder="First Name"
+                        <?php 
+                                if (isset($_POST['mentee_first_name']) && empty($valid_status['mentee_first_name'])) {
+                                    echo "value='".$_POST['mentee_first_name']."'";
+                                } else echo "value='" . "'";
+                                
+                                ?>></td>
                     </tr>
                     <tr>
                         <td>Last Name</td>
-                        <td><input type="text" name="mentee_last_name" id="mentee_last_name" placeholder="Last Name"></td>
+                        <td><input type="text" name="mentee_last_name" id="mentee_last_name" placeholder="Last Name"
+                        <?php 
+                                if (isset($_POST['mentee_last_name']) && empty($valid_status['mentee_last_name'])) {
+                                    echo "value='".$_POST['mentee_last_name']."'";
+                                } else echo "value='" . "'";
+                                
+                                ?>></td>
                     </tr>
                     <tr>
                         <td>Email</td>
@@ -85,11 +98,23 @@ class Mentee_Page
                     </tr>
                     <tr>
                         <td>Date of Birth</td>
-                        <td><input type="date" name="mentee_dob" id="mentee_dob"></td>
+                        <td><input type="date" name="mentee_dob" id="mentee_dob"
+                        <?php 
+                                if (isset($_POST['mentee_dob']) && empty($valid_status['mentee_dob'])) {
+                                    echo "value='".$_POST['mentee_dob']."'";
+                                } else echo "value='" . "'";
+                                
+                                ?>></td>
                     </tr>
                     <tr>
                         <td>Phone Number</td>
-                        <td><input type="text" name="mentee_phone_no" id="mentee_phone_no"></td>
+                        <td><input type="text" name="mentee_phone_no" id="mentee_phone_no"
+                        <?php 
+                                if (isset($_POST['mentee_phone_no']) && empty($valid_status['mentee_phone_no'])) {
+                                    echo "value='".$_POST['mentee_phone_no']."'";
+                                } else echo "value='" . "'";
+                                
+                                ?>></td>
                     </tr>
                     <tr>
                         <td>Status</td>
@@ -113,11 +138,11 @@ class Mentee_Page
         ?> 
         <!-- Start the page's error notification -->
         <div class="highlight">
-                    <p>Please fix the following errors:</p>
+                    <p><strong>Please fix the following errors:</strong></p>
                     <ul>
                         <?php 
                         foreach($valid_status as $error) {
-                            echo '<li>' .$error .'</li>';
+                            echo '<li style="color:red;">' .$error .'</li>';
                            
                         }
                         ?>           
