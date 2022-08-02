@@ -22,10 +22,10 @@ Mentee_Page::navbar();
   <p class="lead">We will contact you to confirm your booking within 24 hours.</p>
   <hr>
   <p>
-    Having trouble? <a href="#">Contact us</a>
+    Book another session? <a href="Mentor_listings.php">Continue to book</a>
   </p>
   <p class="lead">
-    <a class="btn btn-primary btn-sm" href="Homepage.php" role="button">Continue to homepage</a>
+    <a class="btn btn-primary btn-sm" href="Homepage.php" role="button">Back to homepage</a>
   </p>
 </div>
 <?

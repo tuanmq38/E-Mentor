@@ -49,7 +49,7 @@ class Appointment_Page
             if ($appointment->mentor_schedule_date > $currentDate) 
                 echo "<td> <div class=\"bg-info text-white\">" . "Active" . "</div></td>";
             else
-                echo "<td> <div class=\"bg-secondary text-white\">" . "Inactive" . "</div></td>";
+                echo "<td> <div class=\"bg-warning text-white\">" . "Inactive" . "</div></td>";
             
             $link = $_SERVER['PHP_SELF'] . "?action=delete&appointment_id=" . $appointment->getAppointment_id();
             echo "<td><a href=\"" . $link . "\">Delete</td>";

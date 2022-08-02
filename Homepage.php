@@ -48,8 +48,8 @@
             </div>
 
             <div class="col">
-                <h1 class="align-middle" style="color: #5fccac;">Welcome to E-Mentor</h1>
-                <h2 class="align-middle mt-4" style="color: black;">We are proud to contribute to personal's growth, learning, and career development!</h2>
+                <h1 class="align-middle" style="color: #5fccac;">Welcome to E-Mentor!</h1>
+                <h2 class="align-middle mt-4" style="color: black;">We are proud to contribute to personal's growth, learning, and career development.</h2>
                 <a href="Mentor_listings.php" class="btn btn-primary mt-4" style="background-color: #5fccac; border: none; font-size: large;">Book Appointment</a>
             </div>
         </div>
