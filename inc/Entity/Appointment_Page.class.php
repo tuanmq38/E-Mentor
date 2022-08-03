@@ -10,6 +10,7 @@ class Appointment_Page
 
             <h3 class="text-left" style="margin-top: 60px; margin-bottom: 60px; ">Appointment Schedule List</h3>
             <p><strong>Current Time and Date: </strong> <?php echo date("l jS \of F Y h:i:s A"); ?></p>
+            <p><strong>Total Appointments: </strong> <?php echo AppointmentDAO::countTotal()  ?></p>
             <table class="table">
                 <thead class="thead-dark">
                     <tr class="table-active">

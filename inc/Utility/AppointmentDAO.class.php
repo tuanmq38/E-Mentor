@@ -58,6 +58,13 @@ class AppointmentDAO {
         }
         return true;
     }
+
+    static function countTotal() {
+        $sql = "SELECT * FROM Appointment";
+        self::$db->query($sql);
+        self::$db->execute();
+        return self::$db->rowCount();
+    }
 }
 
 ?>
