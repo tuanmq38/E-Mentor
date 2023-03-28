@@ -25,7 +25,7 @@ Mentee_Page::navbar();
     Book another session? <a href="Mentor_listings.php">Continue to book</a>
   </p>
   <p class="lead">
-    <a class="btn btn-primary btn-sm" href="Homepage.php" role="button">Back to homepage</a>
+    <a class="btn btn-primary btn-sm" href="TeamNumber01.php" role="button">Back to homepage</a>
   </p>
 </div>
 <?

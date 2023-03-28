@@ -6,4 +6,4 @@
 - Copy project folder to C:\xampp\htdocs or create a symbolic link (mklink command).
 - Open Command Prompt and login to MySQL.
 - Publish the database from ..\sql\Mentor_Booking.sql .
-- Go the the project folder on <em>localhost/project</em>. Go to the <em>Homepage.php</em> to interact with all functions/features of the web app.
+- Go the the project folder on <em>localhost/project</em>. Go to the <em>TeamNumber01.php</em> to interact with all functions/features of the web app.

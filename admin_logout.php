@@ -17,6 +17,6 @@ unset($_SESSION['loggedin']);
 // destroy the session
 session_destroy();
 
-header("Location: Homepage.php");
+header("Location: TeamNumber01.php");
 
 ?>
