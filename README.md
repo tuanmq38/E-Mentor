@@ -1,4 +1,4 @@
-## E-Mentor App is a web project written in PHP and other front-end technologies, such as HTML, CSS, Javascript. The users can register and schedule for mentoring sessions from our mentors.
+### E-Mentor App is a web project written in PHP and other front-end technologies, such as HTML, CSS, Javascript. The users can register and schedule for mentoring sessions from our mentors.
 
 ## Project Running Guidline
 ### Please implement these steps to test our app:
